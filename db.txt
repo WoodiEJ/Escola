@@ -1,0 +1,2 @@
+{"nome":"João Silva","profissao":"Programador","endereco":"Rua A, 123"}
+{"nome":"Maria Souza","profissao":"Designer","endereco":"Av B, 456"}

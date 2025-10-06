@@ -1,0 +1,73 @@
+:root{
+  --blue:#0b66d1;
+  --orange:#ff7a18;
+  --white:#ffffff;
+  --bg:#f4f7fb;
+  --card-bg: #ffffff;
+  --muted:#6b7280;
+}
+
+*{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+
+body{
+  margin:0;
+  background: linear-gradient(180deg,var(--bg),#437ab8, #cf2929a2 60%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+  color:#2657c7;
+}
+
+.card{
+  width:720px;
+  max-width:96vw;
+  background:var(--card-bg);
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(0, 0, 0, 0.5);
+  padding:24px;
+  border-top:6px solid var(--blue);
+}
+
+h1{
+  margin:0 0 12px 0;
+  color: var(--black);
+  font-size:20px;
+  letter-spacing:0.4px;
+}
+
+form{display:grid;grid-template-columns:1fr;gap:10px;align-items:center;}
+
+label{font-size:13px;color:var(--muted);}
+
+input[type="text"]{
+  padding:10px 12px;
+  border-radius:6px;
+  border:1px solid #dbe6fa;
+  background:#fbfdff;
+  outline:none;
+  font-size:15px;
+}
+
+input[type="text"]:focus{box-shadow:0 0 0 4px rgb(0, 0, 0);border-color:var(--blue);}
+
+.buttons{display:flex;gap:10px;justify-content:flex-end;margin-top:4px;}
+.buttons button{
+  padding:8px 14px;border-radius:6px;border:1px solid rgba(0, 0, 0, 0.12);cursor:pointer;font-weight:600;
+  background:var(--white);
+}
+
+#novo{background: linear-gradient(90deg,var(--orange),#3a74c0); color:var(--white);}
+#salvar{background:linear-gradient(90deg,var(--blue),#00193a); color:var(--white); border:none;}
+#limpar{background:linear-gradient(90deg,var(--orange),#140a02); color:var(--white); border:none;}
+
+.controls{display:flex;gap:10px;margin-top:14px;justify-content:flex-end;}
+.controls button{padding:8px 12px;border-radius:6px;border:1px solid #d0d7e8;background:#fff;cursor:pointer;}
+
+#listaWrapper{margin-top:18px;}
+#lista{list-style:none;padding:0;margin:0;max-height:220px;overflow:auto;border-radius:8px;border:1px dashed #e6eefb;padding:10px;background:linear-gradient(180deg,#ffffff,#fbfdff);}
+#lista li{padding:8px;border-radius:6px;display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;border:1px solid rgba(11,102,209,0.04);}
+.entry-meta{font-size:13px;color:var(--muted);}
+.small-btn{padding:6px 8px;border-radius:6px;border:none;cursor:pointer;font-weight:600;}
+.delete{background:#fff;color:#b91c1c;border:1px solid rgba(185,28,28,0.06);}
