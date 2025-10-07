@@ -1,46 +1,46 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Loja do seu Zé</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="card">
-    <h1>Cadastro de Produtos</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Loja do seu Zé</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Cadastro de Produtos</h1>
 
-    <form id="personForm" autocomplete="off">
-      <label>Nome do Produto</label>
-      <input id="nome" name="nome" type="text" />
+      <form id="personForm" autocomplete="off">
+        <label>Nome do Produto</label>
+        <input id="nome" name="nome" type="text" />
 
-      <label>Preço</label>
-      <input id="profissao" name="profissao" type="text" />
+        <label>Preço</label>
+        <input id="profissao" name="profissao" type="text" />
 
-      <label>Descrição</label>
-      <input id="endereco" name="endereco" type="text" />
+        <label>Descrição</label>
+        <input id="endereco" name="endereco" type="text" />
 
-      <div class="buttons">
-        <button type="button" id="novo">Novo Produto</button>
-        <button type="button" id="salvar">Salvar Produto</button>
-        <button type="button" id="limpar">Limpar Campos</button>
-      </div>
-    </form>
+        <div class="buttons">
+          <button type="button" id="novo">Novo Produto</button>
+          <button type="button" id="salvar">Salvar Produto</button>
+          <button type="button" id="limpar">Limpar Campos</button>
+        </div>
+      </form>
 
-    <section class="controls">
-      <button id="loadDbBtn">Carregar DB (arquivo .txt)</button>
-      <button id="exportDbBtn">Exportar DB (.txt)</button>
-    </section>
+      <section class="controls">
+        <button id="loadDbBtn">Carregar DB (arquivo .txt)</button>
+        <button id="exportDbBtn">Exportar DB (.txt)</button>
+      </section>
 
-    <section id="listaWrapper">
-      <h2>Registros</h2>
-      <ul id="lista"></ul>
-    </section>
+      <section id="listaWrapper">
+        <h2>Registros</h2>
+        <ul id="lista"></ul>
+      </section>
 
-  </main>
+    </main>
 
-  <input id="filePicker" type="file" accept=".txt" style="display:none" />
+    <input id="filePicker" type="file" accept=".txt" style="display:none" />
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
